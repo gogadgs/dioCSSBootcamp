@@ -1,0 +1,201 @@
+/* como se fosse um bundle em javaScript linkando arquivos em modulos */
+
+@import url("./reset.css");
+@import url("./responsive.css");
+
+
+
+/* elementos generalistas do DOM */
+body{
+    background-color: #54233c;
+}
+
+h2{
+    font-size: 2rem;
+    color:#33A8DB;
+    font-weight:bold;
+    letter-spacing: 4px;
+    /* letra maiuscula formatada */
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+p{
+    color:#fafafa;
+}
+section{
+    margin:7rem auto;
+}
+
+/* elementos personalizados */
+/* seção cabeçalho */
+
+.figura{
+    background-image: linear-gradient(rgba(197, 13, 13, 0.6), rgba(29, 35, 37, 0.2), rgba(0, 0, 0, 0.6)), url('../imagens/figura.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:40rem;
+    padding-top:1rem;
+    border-bottom:1px solid #33A8D880;
+}
+
+.figura .conteudo-figura{
+    color:white;
+    width:40rem;
+    margin:0 auto;
+    text-align:center;
+    justify-content:center;
+}
+
+/* h1 personalizado */
+
+.figura .conteudo-figura h1{
+    font-size:2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:transparent;
+    background:-webkit-linear-gradient(#969da1,#2489d0);
+    background-clip: text;
+    -webkit-background-clip:text;
+    
+}
+
+.figura .conteudo-figura p{
+    font-size:1.25rem;
+    margin:2rem 0 2rem;
+}
+
+.figura .conteudo-figura .logo{
+    background-color:rgba(0,0,0,0.2);
+    height:5rem;
+    width:5rem;
+    margin:auto;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    padding:1.5rem;
+    margin:1.5rem 0 1.5rem 0;
+}
+.figura .conteudo-figura .logo img{
+    margin:0 auto;
+    /* garantindo responsividade na imagem  */
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.figura .conteudo-figura button{
+    color:#2489d0;
+    font-size:1.1rem;
+    font-weight:bold;
+    padding:1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color:transparent;
+    border-image:linear-gradient(#3ba1cd,#1572b7);
+    border-image-slice:1;
+    border-radius:10%;
+    -webkit-border-radius:10%;
+    -moz-border-radius:10%;
+    -ms-border-radius:10%;
+    -o-border-radius:10%;
+    cursor:pointer;
+}
+
+/* seção do conteudo principal main */
+
+
+
+#conteudo-dos-cursos{
+    width:35rem;
+    text-align:center;
+    justify-content: center;
+}
+
+#conteudo-dos-cursos .lista-de-modulos{
+    margin:2rem 0;
+    
+
+}
+#conteudo-dos-cursos .lista-de-modulos .modulo{
+    margin:0 auto 2rem;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    width:35rem;
+    border:1px solid #33a8db;
+    background-color:#252525;
+    padding:0.7rem;
+    border-radius:100px;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    -ms-border-radius:100px;
+    -o-border-radius:100px;
+    box-shadow: inset -5px 6px 8px rgba(0,0,0,0.7);
+}
+#conteudo-dos-cursos .lista-de-modulos .modulo:hover{
+    border:1px solid #33a8db;
+    background-color:#252525;
+    color:#1572b7;
+    cursor: pointer;
+    border:1px solid rgba(86, 4, 218, 0.614);
+}
+#conteudo-dos-cursos .lista-de-modulos .modulo span{
+   color:#0202f0;
+}
+
+#mundo-transformado{
+    height:40rem;
+    background-size:100%;
+    background-image: url("../imagens/code-mulher.png");
+    background-attachment:fixed;
+    border-top: 1px solid #33a8d880;
+    padding:15rem;
+
+}
+#mundo-transformado p {
+   font-weight:900;
+   font-size:2.5rem;
+   text-transform:capitalize;
+   max-width: 18rem;
+   text-shadow:3px 2px #3338d8;
+   text-align: center;
+
+}
+
+#mudanças-profissionais{
+    font-weight: 400;
+    font-style:normal;
+    line-height: 2rem;
+    text-align: center;
+    justify-content:center;
+    width:792px;
+}
+#mudanças-profissionais img{
+    margin:1rem auto;
+}
+
+
+/* seção rodapé da página */
+
+footer{
+    padding:5rem 0;
+    height: 0.5rem;
+    justify-content: center;
+    text-align:center;
+    border-top:1px solid #33a8db80;
+    background-image:linear-gradient(rgba(231, 2, 147, 0),rgba(130, 9, 104, 0.912))
+}
+
+footer .dio-me{
+    width:300px;
+}
+
+footer p a{
+    color:#61389b;
+    font-weight:bold;
+    text-decoration:none;
+    letter-spacing:1.5px;
+    
+}

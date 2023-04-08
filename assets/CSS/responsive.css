@@ -1,0 +1,39 @@
+/* responsividade mobile */
+
+@media only screen and (min-width:320px) and (max-width:720px){
+    
+    h2{
+        font-size:1rem;
+    }
+    .figura{
+        height: 40rem;
+        width: 50rem;
+
+    }
+    .figura .conteudo-figura{
+        margin:10rem 2rem;
+        width:100vw;
+        height: 100vh;
+    }
+    
+    #conteudo-dos-cursos{
+      margin:2rem 6rem;
+       
+    }
+    #mundo-transformado{
+        width:45rem;
+        margin:2rem;
+        background-size:100%;
+       
+       
+        
+    }
+    #mundo-transformado p{
+        text-align: left;
+    }
+
+    footer{
+        text-align:center;
+       width:50rem;
+    }
+}
